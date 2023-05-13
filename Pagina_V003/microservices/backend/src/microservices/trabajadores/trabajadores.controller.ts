@@ -16,7 +16,7 @@ export class TrabajadoresController {
 
   @Post('/get')
   getTrabajador(@Body() id: number) {
-    return this.trabajadoresService.getTrabajadores(id);
+    return this.trabajadoresService.getTrabajador(id);
   }
 
   @Post('/create')

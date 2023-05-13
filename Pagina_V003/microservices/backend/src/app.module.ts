@@ -19,7 +19,8 @@ import {
         name: 'CUSTOMER',
         transport: Transport.TCP,
         options: {
-          host: 'microservice-customer',
+          host:'127.0.0.1',
+          // host: 'microservice-customer',
           port: 5001,
         },
       },
@@ -27,7 +28,8 @@ import {
         name: 'PRODUCTS',
         transport: Transport.TCP,
         options: {
-          host: 'microservice-products',
+          host:'127.0.0.1',
+          // host: 'microservice-products',
           port: 5002,
         },
       },
@@ -35,7 +37,8 @@ import {
         name: 'TRABAJADORES',
         transport: Transport.TCP,
         options: {
-          host: 'microservice-products',
+          host:'127.0.0.1',
+          // host: 'microservice-products',
           port: 5003,
         },
       },

@@ -79,8 +79,8 @@ const CustomerPage = () => {
   };
 
   return (
-    <>
-      <Typography>Products</Typography>
+    <CustomerPageContainer>
+      <Typography variant="h3" >Custumer</Typography>
       <AddCustomer
         createCustomer={onCreateCustomer}
         updateCustomer={onUpdateCustomer}
@@ -88,8 +88,11 @@ const CustomerPage = () => {
         customer={customer}
       />
       <CustomerList column={[...column, newColumn]} customers={customerList} />
-    </>
+    </CustomerPageContainer>
   );
 };
 
+const CustomerPageContainer = styled.div`
+  background-color: #e2e67c;
+  `
 export default CustomerPage;

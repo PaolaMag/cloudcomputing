@@ -27,7 +27,7 @@ const TrabajadoresPage = () => {
   return (
     <TrabajadoresPageContainer>
       <Typography variant="h3">Trabajadores</Typography>
-      <Typography fontSize={14} color={"blueviolet"}>
+      <Typography fontSize={14} color={"white"}>
         First name: {currentTrabajadores.firstname}
       </Typography>
       <Typography fontSize={14}>
@@ -40,6 +40,9 @@ const TrabajadoresPage = () => {
 
 const TrabajadoresPageContainer = styled.div`
   margin: 24px;
+  background-color: #cddf17;;
+  width: 50vh;
+  height: 50vh;
 `;
 
 export default TrabajadoresPage;

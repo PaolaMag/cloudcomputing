@@ -83,7 +83,7 @@ const ProductsPage = () => {
 
   return (
     <ProductsPageContainer>
-      <Typography>Products</Typography>
+      <Typography variant="h3">Products</Typography>
       <AddProduct
         createProduct={onCreateProduct}
         updateProduct={onUpdateProduct}
@@ -98,3 +98,5 @@ const ProductsPage = () => {
 const ProductsPageContainer = styled.div`
   background-color: #e2e67c;
   `
+
+export default ProductsPage;

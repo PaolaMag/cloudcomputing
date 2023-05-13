@@ -1,15 +1,22 @@
+import Head from "next/head";
 import GlobalMenu from "../globalMenu/GlobalMenu";
 
 import styled from "styled-components";
 
 const Layout = ({ children }) => {
   return (
+    <>
+    <Head>
+    <title>La Tiendita</title>
+    </Head>
     <Container>
       <GlobalMenu />
       <main>{children}</main>
     </Container>
+    </>
   );
 };
+
 
 const Container = styled.div`
   display: flex;

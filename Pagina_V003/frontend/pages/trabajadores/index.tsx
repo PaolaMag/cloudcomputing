@@ -27,7 +27,7 @@ const column = [
   },
 ];
 
-const TrabajadoresPage = (s) => {
+const TrabajadoresPage = () => {
   const {
     trabajadoresList,
     getTrabajadores,
@@ -80,7 +80,7 @@ const TrabajadoresPage = (s) => {
 
   return (
     <TrabajadorPageContainer>
-      <Typography>Trabajadores</Typography>
+      <Typography variant="h3">Trabajadores</Typography>
       <AddTrabajadores
         createTrabajadores={onCreateTrabajadores}
         updateTrabajadores={onUpdateTrabajadores}

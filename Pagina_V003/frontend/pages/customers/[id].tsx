@@ -19,7 +19,7 @@ const CustomerPage = () => {
 
   if (!currentCustomer)
     return (
-      <Typography fontSize={16} align="center">
+      <Typography fontSize={18} align="center">
         Error!
       </Typography>
     );
@@ -27,19 +27,22 @@ const CustomerPage = () => {
   return (
     <CustomerPageContainer>
       <Typography variant="h3">Customer</Typography>
-      <Typography fontSize={14} color={"blueviolet"}>
+      <Typography fontSize={18} color={"white"}>
         First name: {currentCustomer.firstname}
       </Typography>
-      <Typography fontSize={14}>
+      <Typography fontSize={18}>
         Last name: {currentCustomer.lastname}
       </Typography>
-      <Typography fontSize={14}>Age: {currentCustomer.age}</Typography>
+      <Typography fontSize={18}>Age: {currentCustomer.age}</Typography>
     </CustomerPageContainer>
   );
 };
 
 const CustomerPageContainer = styled.div`
   margin: 24px;
+  background-color: #7de8ff;
+  width: 50vh;
+  height: 50vh;
 `;
 
 export default CustomerPage;

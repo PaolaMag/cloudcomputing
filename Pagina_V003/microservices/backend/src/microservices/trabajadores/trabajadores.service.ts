@@ -21,7 +21,7 @@ export class TrabajadoresService {
     );
   }
 
-  getTrabajadores(id: number) {
+  getTrabajador(id: number) {
     return this.trabajadoresClient.send(
       { role: 'trabajadores', cmd: 'get' },
       id,

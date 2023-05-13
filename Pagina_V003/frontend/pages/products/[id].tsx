@@ -19,7 +19,7 @@ const ProductPage = () => {
 
   if (!currentProduct)
     return (
-      <Typography fontSize={16} align="center">
+      <Typography fontSize={18} align="center">
         Error!
       </Typography>
     );
@@ -27,19 +27,23 @@ const ProductPage = () => {
   return (
     <ProductPageContainer>
       <Typography variant="h3">Product</Typography>
-      <Typography fontSize={14} color={"blueviolet"}>
+      <Typography fontSize={18} color={"white"}>
         Name: {currentProduct.name}
       </Typography>
-      <Typography fontSize={14}>
+      <Typography fontSize={18}>
         Description: {currentProduct.description}
       </Typography>
-      <Typography fontSize={14}>Quantity: {currentProduct.quantity}</Typography>
+      <Typography fontSize={18}>Quantity: {currentProduct.quantity}</Typography>
     </ProductPageContainer>
   );
 };
 
 const ProductPageContainer = styled.div`
   margin: 24px;
+  background-color: #f876b2;
+  width: 50vh;
+  height: 50vh;
+  
 `;
 
 export default ProductPage;
