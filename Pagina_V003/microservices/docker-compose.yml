@@ -1,20 +1,6 @@
 version: "3.3"
 
 services:
-  gateway:
-    image: nginx:latest
-    ports:
-      - "80:80"
-    container_name: gateway
-    networks:
-      - app-tier
-    depends_on:
-      - backend
-      - microservice-customer
-      - microservice-products
-      - microservice-trabajadores
-    volumes:
-      - ./api-gateway/nginx.conf:/etc/nginx/conf.d/default.conf
   backend:
     container_name: backend
     build:

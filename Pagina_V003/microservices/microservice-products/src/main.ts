@@ -7,8 +7,8 @@ async function bootstrap() {
     AppModule,
     {
       transport: Transport.TCP,
-      // options: { host: 'microservice-products', port: 5002 },
-      options: { host: '127.0.0.1', port: 5002 },
+      options: { host: 'microservice-products', port: 5002 },
+      // options: { host: '127.0.0.1', port: 5002 },
     },
   );
   await app.listen();
