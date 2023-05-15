@@ -80,7 +80,7 @@ const CustomerPage = () => {
 
   return (
     <CustomerPageContainer>
-      <Typography variant="h3" >Custumer</Typography>
+      <Typography variant="h3" >Customer</Typography>
       <AddCustomer
         createCustomer={onCreateCustomer}
         updateCustomer={onUpdateCustomer}
